@@ -1,0 +1,44 @@
+﻿@section Scripts {
+
+    <script src="~/Scripts/gostCrypto.min.js"></script>
+    <script src="~/Scripts/gostCoding.min.js"></script>
+
+    <script src="~/Scripts/diffieHellman.js"></script>
+    <script src="~/Scripts/index.js"></script>
+}
+
+<h1>Generated Keys</h1>
+<label>Alice Public Key</label>
+<input type=text id="alicePublicKey" />
+<i>Alice sends this key to Bob over a public channel</i>
+<br />
+<label>Bob Public Key</label>
+<input type=text id="bobPublicKey" />
+<i>Bob sends this key to Alice over a public channel</i>
+
+<br />
+<hr>
+<br />
+
+<h1>Secret message</h1>
+<label>Type in your secret message</label>
+<input type=text id="message" value="Hello Bob! This is Alice." />
+<br />
+<button onclick="encryptText()">Encrypt</button>
+
+<br />
+<hr>
+<br />
+
+<h1>Result</h1>
+<label>Encrypted text</label>
+<input type=text id="encrypted" />
+<br />
+<label>Wrapped Key</label>
+<input type=text id="wrappedKey" />
+<br />
+<label>UKM Key</label>
+<input type=text id="ukmKey" />
+<br />
+<i>The encrypted text, wrapped key and UKM Key gets</i>
+<button onclick="decryptText()">Decrypt</button>
