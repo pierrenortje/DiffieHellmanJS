@@ -5,7 +5,14 @@ This implementation makes use of the GOST libraries found at: http://gostcrypto.
 
 I have added a DiffieHellman component to handle the encryption and decryption.
 
-Example:
+## Introduction
+Snippit from [Wikipedia](https://en.wikipedia.org/wiki/GOST_(block_cipher)):
+
+> "Developed in the 1970s, the standard had been marked "Top Secret" and then downgraded
+> to "Secret" in 1990. Shortly after the dissolution of the USSR, it was declassified
+> and it was released to the public in 1994..."
+
+## Example
 
 ```javascript
 var bob = DiffieHellman();
